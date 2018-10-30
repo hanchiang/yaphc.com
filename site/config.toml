@@ -1,9 +1,84 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+# baseurl = "/"
+# languageCode = "en-us"
+# languageLang = "en"
+# title = "My new Victor-Hugo site"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+# # RSS, categories and tags disabled for an easy start
+# # See configuration options for more details: 
+# # https://gohugo.io/getting-started/configuration/#toml-configuration
+# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+baseurl         = "/"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+canonifyurls    = true
+
+[params]
+  title       = "Hugo Casper Two"
+  subtitle    = "Port of Casper 2.x for Hugo"
+  copyright   = "© 2018"
+
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  # social links at header & footer
+  twitterName = ""
+  fbName = ""
+  githubName = "hanchiang"
+  linkedinName = "yap-han-chiang-83592655/"
+  mediumName = ""
+
+  logo = "hugo-logo.png"
+  orgName = "yaphc"
+  orgWebsite = "https://www.yaphc.com"
+  orgDescription = "Here is a description placeholder for your org"
+
+  showSupport = true
+
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Singapore, SG"
+  authorWebsite = "https://www.yaphc.com"
+  authorDescription = "Your description here"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "About Me"
+  url = "/about"
+  weight = 150
+
+[[menu.main]]
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
+
+[[menu.main]]
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
+
+
