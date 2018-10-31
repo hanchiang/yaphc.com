@@ -2,4 +2,4 @@
 import '../../site/static/js/register-service-worker.js'
 
 // Say hello
-console.log('Hello! Edit me in src/js/app.jsssssss');
+console.log('Hello! Edit me in src/js/app.js');
